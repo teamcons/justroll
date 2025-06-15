@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.github.elfenware.thumbtack</id>
-  <launchable type="desktop-id">com.github.elfenware.thumbtack.desktop</launchable>
-  <translation type="gettext">com.github.elfenware.thumbtack</translation>
+  <id>io.github.teamcons.justroll</id>
+  <launchable type="desktop-id">io.github.teamcons.justroll.desktop</launchable>
+  <translation type="gettext">io.github.teamcons.justroll</translation>
   <metadata_license>CC-BY-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   
-  <name>thumbtack</name>
+  <name>justroll</name>
   <summary>Proves that we can use Vala and Gtk</summary>
   <description>
     <p>
@@ -23,7 +23,7 @@
   <content_rating type="oars-1.1" />
 
   <provides>
-    <binary>com.github.elfenware.thumbtack</binary>
+    <binary>io.github.teamcons.justroll</binary>
   </provides>
 
   <url type="homepage"></url>

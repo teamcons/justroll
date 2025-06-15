@@ -14,13 +14,13 @@ foreach i : icon_sizes
 endforeach
 
 install_data(
-    'thumbtack.gschema.xml',
+    'justroll.gschema.xml',
     install_dir: get_option('datadir') / 'glib-2.0' / 'schemas',
     rename: meson.project_name() + '.gschema.xml'
 )
 
 i18n.merge_file(
-    input: 'thumbtack.desktop.in',
+    input: 'justroll.desktop.in',
     output: meson.project_name() + '.desktop',
     po_dir: meson.project_source_root() / 'po',
     type: 'desktop',
@@ -29,7 +29,7 @@ i18n.merge_file(
 )
 
 i18n.merge_file(
-    input: 'thumbtack.metainfo.xml.in',
+    input: 'justroll.metainfo.xml.in',
     output: meson.project_name() + '.metainfo.xml',
     po_dir: meson.project_source_root() / 'po',
     install: true,
