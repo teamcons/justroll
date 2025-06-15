@@ -2,10 +2,10 @@
 Version=1.0
 Type=Application
 
-Name=thumbtack
+Name=justroll
 Comment=Proves that we can use Vala and Gtk
 Categories=Development;Education;
 
-Icon=com.github.elfenware.thumbtack
-Exec=com.github.elfenware.thumbtack
+Icon=io.github.teamcons.justroll
+Exec=io.github.teamcons.justroll
 Terminal=false

@@ -44,11 +44,11 @@ public class MyApp : Gtk.Application {
         * Set maximize after height/width else window is min size on unmaximize
         * Bind maximize as SET else get get bad sizes
         */
-        //var settings = new Settings (".thumbtack");
+        //var settings = new Settings (".justroll");
 
         // Use Css
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/github/elfenware/thumbtack/Application.css");
+        provider.load_from_resource ("/io/github/teamcons/justroll/Application.css");
 
         Gtk.StyleContext.add_provider_for_display (
             Gdk.Display.get_default (),

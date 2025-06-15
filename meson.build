@@ -1,6 +1,6 @@
 # project name and programming language
 project(
-  'com.github.elfenware.thumbtack',
+  'io.github.teamcons.justroll',
   'vala', 'c',
   version: '0.1'
 )
@@ -24,7 +24,7 @@ config_file = configure_file(
 
 gresource = gnome.compile_resources(
     'as-resources',
-    'data' / 'thumbtack.gresource.xml',
+    'data' / 'justroll.gresource.xml',
     source_dir: 'data',
     c_name: 'as'
 )

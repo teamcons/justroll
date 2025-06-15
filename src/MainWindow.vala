@@ -7,16 +7,16 @@ public class MainWindow : Gtk.ApplicationWindow {
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
-            default_height: 300,
-            default_width: 300,
-            icon_name: ".thumbtack",
+            default_height: 1,
+            default_width: 220,
+            icon_name: ".justroll",
             title: _("My App Name")
         );
     }
 
     static construct {
 		weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
-		default_theme.add_resource_path ("com/github/elfenware/thumbtack/");
+		default_theme.add_resource_path ("io/github/teamcons/justroll/");
 	}
 
     construct {
@@ -27,6 +27,7 @@ public class MainWindow : Gtk.ApplicationWindow {
             gtk_settings.gtk_theme_name = "io.elementary.stylesheet.blueberry";
         }
 
+        this.resizable = false;
 
         // We need to hide the title area for the split headerbar
         var everything = new Gtk.Box (HORIZONTAL, 6) ;
@@ -34,11 +35,13 @@ public class MainWindow : Gtk.ApplicationWindow {
         var diceentry = new Gtk.Entry () {
             tooltip_text = "1d6 2d4"
         };
+
+
         everything.append (diceentry);
 
         var header = new Gtk.HeaderBar () ;
         header.show_title_buttons = true;
-        header.title_widget = everything;
+        header.pack_start (everything);
 
         set_titlebar (header);
 
