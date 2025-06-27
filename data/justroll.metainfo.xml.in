@@ -7,16 +7,16 @@
   <project_license>GPL-3.0-or-later</project_license>
   
   <name>justroll</name>
-  <summary>Proves that we can use Vala and Gtk</summary>
+  <summary>Just roll a dice</summary>
   <description>
     <p>
-      A quick summary of your app's main selling points and features. Just a couple sentences per paragraph is best
+      A very simple dice roller app
     </p>
   </description>
 
   <screenshots>
     <screenshot type="default">
-      <image>{{ IMAGE_URL }}</image>
+      <image>https://raw.githubusercontent.com/teamcons/justroll/master/data/screenshot.png</image>
     </screenshot>
   </screenshots>
 
@@ -26,38 +26,31 @@
     <binary>io.github.teamcons.justroll</binary>
   </provides>
 
-  <url type="homepage"></url>
-  <url type="bugtracker"></url>
+  <url type="homepage">https://github.com/teamcons/justroll</url>
+  <url type="bugtracker">https://github.com/teamcons/justroll</url>
   <url type="donation"></url>
   <url type="help"></url>
-  <url type="translate"></url>
+  <url type="translate">https://github.com/teamcons/justroll</url>
 
-  <developer id="io.github.ellie_commons">
+  <developer id="io.github.teamcons">
     <name>Team Constellation</name>
   </developer>
-  <update_contact>stella.menier@posteo.de</update_contact>
+  <update_contact>teamcons.carrd.co</update_contact>
 
   <releases>
     <release version="8.0.1" date="2024-11-20" urgency="medium">
       <description>
-        <p>Minor updates:</p>
+        <p>Initial release:</p>
         <ul>
-          <li>Updated translations</li>
+          <li>I just needed something for GMing ttrpg</li>
         </ul>
       </description>
-      <issues>
-        <issue url="URL">ISSUE NAME</issue>
-      </issues>
     </release>
   </releases>
 
   <branding>
-    <color type="primary" scheme_preference="light">#ff8c82</color>
-    <color type="primary" scheme_preference="dark">#7a0000</color>
+    <color type="primary" scheme_preference="light">#fafafa</color>
+    <color type="primary" scheme_preference="dark">#d4d4d4</color>
   </branding>
 
-  <custom>
-    <value key="x-appcenter-suggested-price">5</value>
-    <value key="x-appcenter-stripe">pk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</value>
-  </custom>
 </component>
