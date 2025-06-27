@@ -3,10 +3,10 @@
 * SPDX-FileCopyrightText: {{YEAR}} {{DEVELOPER_NAME}} <{{DEVELOPER_EMAIL}}>
 */
 
-public class MyApp : Gtk.Application {
+public class Justroll : Gtk.Application {
     public MainWindow main_window;
 
-    public MyApp () {
+    public Justroll () {
         Object (
             application_id: "io.github.teamcons.justroll",
             flags: ApplicationFlags.FLAGS_NONE
@@ -52,6 +52,6 @@ public class MyApp : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        return new MyApp ().run (args);
+        return new Justroll ().run (args);
     }
 }
