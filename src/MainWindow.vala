@@ -30,22 +30,31 @@ public class MainWindow : Gtk.ApplicationWindow {
         this.resizable = false;
 
         // We need to hide the title area for the split headerbar
-        var everything = new Gtk.Box (HORIZONTAL, 6) ;
-
-        var diceentry = new Gtk.Entry () {
-            tooltip_text = "1d6 2d4"
+        var everything = new Gtk.Box (HORIZONTAL, 6)  {
+            halign = GTK_ALIGN_START
         };
 
+        var diceentry = new Gtk.Entry () {
+            tooltip_text = "d4"
+        };
+
+        var letsgo = new Gtk.Button () {
+          text = _("Roll")  
+        };
+
+        var rollresult = new Gtk.Label () {
+          label = "4!"  
+        };
 
         everything.append (diceentry);
+        everything.append (letsgo);
+        everything.append (rollresult);
 
-        var header = new Gtk.HeaderBar () ;
-        header.show_title_buttons = true;
-        header.pack_start (everything);
+        //var header = new Gtk.HeaderBar () ;
+        //header.show_title_buttons = true;
+        //header.pack_start (everything);
 
-        set_titlebar (header);
-
-
+        set_titlebar (everything);
 
         var null_title = new Gtk.Grid () {
             visible = false

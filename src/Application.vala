@@ -39,13 +39,6 @@ public class MyApp : Gtk.Application {
 
         var main_window = new MainWindow (this);
 
-        /*
-        * This is very finicky. Bind size after present else set_titlebar gives us bad sizes
-        * Set maximize after height/width else window is min size on unmaximize
-        * Bind maximize as SET else get get bad sizes
-        */
-        //var settings = new Settings (".justroll");
-
         // Use Css
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/github/teamcons/justroll/Application.css");
