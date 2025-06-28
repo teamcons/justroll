@@ -48,6 +48,7 @@ public class MainWindow : Gtk.ApplicationWindow {
             label = _("Roll"),
             halign = Gtk.Align.START
         };
+        letsgo.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var rollresult = new Gtk.Label (_("")) {
             width_request = 50,
